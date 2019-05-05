@@ -1,0 +1,349 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Raleway', Times, serif;
+  letter-spacing: 0.5px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+img,
+object,
+embed,
+canvas,
+video,
+audio,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+.center {
+  width: 960px;
+  margin: 0 auto;
+}
+.center-fuild {
+  width: 1400px;
+  margin: 0 auto;
+}
+body {
+  text-align: center;
+  background-color: #1d1d1d;
+}
+.clear {
+  clear: both;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+h2,
+h3 {
+  color: #ad7835;
+  display: inline-block;
+}
+h2:after,
+h3:after {
+  content: '';
+  display: block;
+  border-bottom: solid 3px #ad7835;
+  width: 90px;
+}
+h2 {
+  font-size: 60px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  line-height: 80px;
+}
+header {
+  background: url(../img/bg-header.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+}
+header .logo {
+  background: url(../img/logo.png) no-repeat center;
+  height: 471px;
+  width: 964px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 215px;
+}
+section.about {
+  justify-content: center;
+  padding-bottom: 230px;
+}
+section.about:before {
+  content: '';
+  display: block;
+  border-top: solid 1px #ad7835;
+  transform: rotate(20deg);
+  transform-origin: 0;
+  width: 100%;
+  z-index: -1;
+  filter: blur(0.2rem);
+}
+section.about article {
+  background-color: #373737;
+  text-align: left;
+  padding: 70px 120px 70px 70px;
+  width: 1300px;
+  height: 560px;
+  position: relative;
+}
+section.about article:after {
+  content: url(../img/moi-bout.jpg);
+  display: block;
+  position: absolute;
+  right: 50px;
+  bottom: -50px;
+}
+section.about article h3 {
+  font-family: 'Montserrat';
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 65px;
+}
+section.about article p {
+  color: #fff;
+  width: 465px;
+}
+section.about article p:nth-of-type(2) {
+  margin-top: 40px;
+}
+section.about article a.btn {
+  font-family: 'raleway';
+  color: #ad7835;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 50px;
+  line-height: 60px;
+  border: solid 1px #ad7835;
+  display: inline-block;
+  margin-top: 50px;
+}
+section.article {
+  padding: 65px 0 145px 0;
+}
+section.article:before {
+  content: '';
+  display: block;
+  border-top: solid 1px #ad7835;
+  transform: rotate(-30deg);
+  transform-origin: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(0.2rem);
+}
+section.article h2 {
+  margin-bottom: 115px;
+  display: inline-block;
+}
+section.article .flex {
+  justify-content: space-around;
+}
+section.article .flex article {
+  width: 370px;
+  height: 490px;
+  text-align: left;
+  position: relative;
+}
+section.article .flex article:nth-of-type(2) {
+  margin-top: 85px;
+}
+section.article .flex article:nth-child(1) figure {
+  background: url(../img/monumentvalley.jpg);
+  height: 235px;
+  width: 338px;
+  box-shadow: -32px -40px 0px 0px #363636;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section.article .flex article:nth-child(2) figure {
+  background: url(../img/sequoia.jpg);
+  height: 235px;
+  width: 338px;
+  box-shadow: -32px -40px 0px 0px #363636;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section.article .flex article:nth-child(3) figure {
+  background: url(../img/pont.jpg);
+  height: 235px;
+  width: 338px;
+  box-shadow: -32px -40px 0px 0px #363636;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section.article .flex article .wrap {
+  position: absolute;
+  bottom: 0;
+}
+section.article .flex article h4 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  color: #ad7835;
+  border-bottom: solid 1px #ad7835;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+section.article .flex article p {
+  color: #fff;
+  font-family: 'Raleway';
+  margin-bottom: 35px;
+}
+section.article .flex article a.btn {
+  display: inline-block;
+  color: #ad7835;
+  font-family: 'Raleway';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.galerie {
+  padding: 95px 0 80px 0;
+}
+section.galerie:before {
+  content: '';
+  display: block;
+  border-top: solid 1px #ad7835;
+  transform: rotate(30deg);
+  transform-origin: 0;
+  width: 100%;
+  z-index: -1;
+  filter: blur(0.2rem);
+}
+section.galerie h2 {
+  margin-bottom: 50px;
+}
+section.galerie .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+section.galerie .span-row-1 {
+  margin-top: 90px;
+}
+section.galerie .span-col-2 {
+  margin-top: -95px;
+  grid-column: span 2 / auto;
+}
+section.galerie .span-row-3 {
+  grid-row: span 1 / auto;
+  height: 349px;
+}
+section.galerie .span-row-4 {
+  grid-row: span 4 / auto;
+}
+section.galerie .span-row-5 {
+  margin-top: 119px;
+}
+section.contact {
+  padding: 170px 0;
+  justify-content: center;
+}
+section.contact:before {
+  content: '';
+  display: block;
+  border-top: solid 1px #ad7835;
+  transform: rotate(-25deg);
+  transform-origin: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(0.2rem);
+}
+section.contact article {
+  background-color: #373737;
+  text-align: left;
+  padding: 70px 70px 70px 700px;
+  width: 1300px;
+  height: 560px;
+  position: relative;
+}
+section.contact article:after {
+  content: url(../img/contact.jpg);
+  display: block;
+  position: absolute;
+  left: 50px;
+  bottom: -50px;
+}
+section.contact article h3 {
+  font-family: 'Montserrat';
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 65px;
+}
+section.contact article form {
+  text-align: left;
+}
+section.contact article form .flex {
+  justify-content: space-between;
+}
+section.contact article form .flex input {
+  width: 40%;
+  margin-bottom: 30px;
+}
+section.contact article form .flex input:nth-of-type(1) {
+  margin-right: 20px;
+}
+section.contact article form input,
+section.contact article form textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 20px;
+}
+section.contact article form textarea {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 75px;
+}
+section.contact article form #submit {
+  font-family: 'Raleway';
+  font-size: 16px;
+  color: #ad7835;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 50px;
+  line-height: 60px;
+  border: solid 1px #ad7835;
+}
+footer {
+  padding: 50px 0;
+}
+footer a.btn {
+  color: #ad7835;
+}
+footer i.fab {
+  border: solid 1px #ad7835;
+  width: 80px;
+  line-height: 80px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+footer p {
+  color: #ad7835;
+}
